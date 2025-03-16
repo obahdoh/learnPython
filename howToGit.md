@@ -48,3 +48,39 @@ Once you've prepared some files to be saved you can actually save them with `git
 ```
 
 The `-m` after commit is used to indicate that the next thing is the message for the commit. The message itself must be surround in quote marks.
+
+```bash
+@obahdoh ➜ /workspaces/learnPython (main) $ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+Now when you run `git status` you can see there are no untracked changes. But it does save that you are one commit ahead of orign/main
+
+## git push
+
+Any changes you commit are only saved to the repo on your computer they are not automatically saved to github. In fact the repo on your computer is a copy of the one on github (which is referred to as 'origin'). So when git status says you are ahead of origin, that means you have work which has been saved to github. To do that you must `git push` your work.
+
+```bash
+@obahdoh ➜ /workspaces/learnPython (main) $ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.08 KiB | 1.08 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/obahdoh/learnPython
+   e15b537..ee8ad38  main -> main
+@obahdoh ➜ /workspaces/learnPython (main) $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+In the above example we say to push to the computer called origin (github) all the work on your branch called main. 
+
+For now don't worry about branches.
