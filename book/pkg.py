@@ -1,3 +1,3 @@
-for x in range (0,100000000000):
-    print('Big fat bum bum')
-
+ingredinets=['snails','leeches','']
+for x in range (1,5):
+    print(x, )
