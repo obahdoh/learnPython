@@ -1,4 +1,4 @@
-ingredients=['snails','leeches','gorilla belly-button lint','caterpillar eyebrows','centipede toes']
-owen=0
-for x in range (1,5):
-    print(x, ingredients)
+weight=26.2
+for x in range(0,15):
+    print(weight*0.165)
+    weight+=2           
